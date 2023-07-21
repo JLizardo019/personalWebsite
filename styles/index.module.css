@@ -1,0 +1,73 @@
+/* Section 1 */
+#firstBlock{
+    height: 93vh;
+    background-color: aqua;
+}
+.subBox{
+    display: flex;
+    height:90%;
+}
+.left{
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 48%;
+    font-size: 2rem;
+}
+
+#headshot{
+    border-radius: 50%;
+}
+
+#arrow{
+    display: block;
+    margin: auto;
+}
+
+/* Section 2 */
+.secondBlock{
+    height:100vh;
+    padding: var(--edge-width);
+}
+
+#schoolRow{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.schools{
+    border-radius: 50%;
+    border: solid pink 1rem;
+}
+
+.schools:hover{
+    border-width: 1.5rem;
+}
+
+/* Third Block */
+.projects{
+    display:flex;
+}
+
+.proImage{
+    width: 30%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proImage img{
+    width:50%;
+    height:auto;
+    margin:2em;
+}

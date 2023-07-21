@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --primary: lightgray;
+    --edge-width: 2rem;
+}
+/* body{
+    margin: 0px;
+    padding: 0px;
+} */
