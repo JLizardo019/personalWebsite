@@ -3,10 +3,24 @@
 @tailwind utilities;
 
 :root{
-    --primary: lightgray;
-    --edge-width: 2rem;
+    --c1: #F8A76C;
+    --c2: #C2D8B8;
+    --c3: #E94C42;
+    --c4: #FDF1E5;
+    --c5: #FBCFC9;
+    --c6: #B1D2E0;
+    
 }
-/* body{
-    margin: 0px;
-    padding: 0px;
-} */
+
+.blob{
+    background: green url('/images/blob.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20rem 10rem ;
+    width: 200px;
+    height: 100px;
+    position: relative;
+}
+
+
+
