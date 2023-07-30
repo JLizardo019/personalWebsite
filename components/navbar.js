@@ -61,7 +61,8 @@ export default function NavBar() {
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Julie Lizardo</span>
-            <h1 className="pl-2 lg:pl-3" id='logo'>Julie</h1>
+            <img className="h-[4.6rem] hover:h-[5rem]" src="/images/logo.svg" id='logo'/>
+
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -96,7 +97,7 @@ export default function NavBar() {
           <div className="flex items-center justify-between">
             <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Julie Lizardo</span>
-            <h1 className="pl-2 lg:pl-3" id='logo'>Julie</h1>
+            <img className="h-[4.6rem] hover:h-[5rem]" src="/images/logo.svg" id='logo'/>
           </Link>
             <button
               type="button"

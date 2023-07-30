@@ -97,18 +97,10 @@ export default function MainHero() {
     <div className="bg-white relative lg:min-h-[92vh] isolate overflow-hidden">
      <div className="mx-auto lg:min-h-[92vmin] lg:items-center max-w-7xl px-6 lg:flex lg:px-8"> 
         <div className="mx-auto max-w-2xl pb-24 lg:pb-0 lg:mx-0 lg:max-w-xl">
-          <h1 className="mt-10 text-[5rem] font-bold tracking-tight text-center text-gray-900 sm:text-6xl">
+          <h1 className="mt-8 text-[5rem] font-bold tracking-tight text-center text-gray-900 sm:text-6xl">
           hi, i am julie! <br/><br/> i am a <span >web developer</span>, <span>educator</span>, and <span>digital creative </span> based in boston, ma.
           </h1>
-          {/* <h1 className="mt-10 text-6xl font-bold tracking-tight text-center text-gray-900 sm:text-6xl">
-          Hi, I am Julie! <br/><br/> I am a <span className="text-[var(--c5)]">web developer</span>, <span className="text-[var(--c1)]">educator</span>, and <span className="text-[var(--c3)]">digital creative </span> based in Boston, MA.
-          </h1> */}
-          {/* <p className="mt-6 text-lg leading-8 text-gray-600">
-            Hi, my name is Julie Lizardo. I am a web developer, educator, and digital creative based in Boston, Massachusetts. I am passionate about computer science and helping misrepresented communities find opportunities in the fast-growing field of tech. 
-            Hi, I am a I am a web developer, educator, and digital creative.
-            Hi, I am a I am a web developer, educator, and digital creative.
-            Hi, I am a I am a web developer, educator, and digital creative.
-          </p> */}
+          
           <div className="mt-10 flex gap-x-6">
             
             {/* <Link
@@ -125,7 +117,7 @@ export default function MainHero() {
                 <svg id="Overall" className="mx-auto lg:ml-11" width={850} data-name="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 638.0117 592.9951">
                   <g id="Me" data-name="Me">
                   <g id="Layer_19" data-name="Layer 19">
-                    <path d="m228.7549,591.6791c68.66-10.83,138.12-16.46,207.6-16.81,24.08-.12,49.66-.02,70.11-12.91,27.08-17.07,37.27-51.98,40.11-84.19s.67-65.64,12.09-95.84c15.05-39.79,51.43-67.82,68.61-106.71,19.45-44.02,11.05-97.23-13.75-138.38s-64.12-71.49-106.17-94.02c-27.86-14.93-57.37-26.89-88.05-34.18-118.7601-28.23-244.1901,16.07-345.9201,84.33-13.65,9.16-28.35,21.04-29.3,37.62-.89,15.49,10.67,28.6,15.19,43.42,5.46,17.92.23,37.57-8.4,54.17s-20.5,31.24-29.66,47.54c-36.4,64.74-23.81,150.92,21.37,209.71,45.18,58.79,117.28,117.12,186.17,106.25Z" fill="#fdf1e5"/>
+                    <path d="m228.7549,591.6791c68.66-10.83,138.12-16.46,207.6-16.81,24.08-.12,49.66-.02,70.11-12.91,27.08-17.07,37.27-51.98,40.11-84.19s.67-65.64,12.09-95.84c15.05-39.79,51.43-67.82,68.61-106.71,19.45-44.02,11.05-97.23-13.75-138.38s-64.12-71.49-106.17-94.02c-27.86-14.93-57.37-26.89-88.05-34.18-118.7601-28.23-244.1901,16.07-345.9201,84.33-13.65,9.16-28.35,21.04-29.3,37.62-.89,15.49,10.67,28.6,15.19,43.42,5.46,17.92.23,37.57-8.4,54.17s-20.5,31.24-29.66,47.54c-36.4,64.74-23.81,150.92,21.37,209.71,45.18,58.79,117.28,117.12,186.17,106.25Z" fill="#FF7094"/>
                   </g>
                   <g id="Figure">
                     <g id="Body">

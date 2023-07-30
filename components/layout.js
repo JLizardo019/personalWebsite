@@ -2,11 +2,12 @@ import NavBar from './navbar';
 import Footer from './footer';
 
 export default function Layout({ children }) {
-    return <> 
-      <NavBar></NavBar>
+    return <div id="layout">
+        <NavBar></NavBar>
 
-      {children}
+        {children}
 
-      <Footer></Footer>
-      </>;
+        <Footer></Footer>
+      </div>
+
   }

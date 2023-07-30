@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Logos({id}) {
     return (
-      <div id ={id} className=" py-10 sm:py-10">
+      <div id ={id} className="rounded-lg pb-3 bg-[var(--c1)] py-10 sm:py-10">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
           <div className="grid grid-cols-1 items-center gap-x-8 gap-y-16 lg:grid-cols-2">
             <div className="mx-auto w-full max-w-[45rem] lg:max-w-xl lg:mx-0">
@@ -13,11 +13,12 @@ export default function Logos({id}) {
                 My goal in every class is to give you the confidence to fail while you learn and have fun in the process! 
               </p>
               <div className="mt-8 flex items-center gap-x-6">
+
                 <Link
                   href="/curriculum"
-                  className="rounded-2xl bg-[var(--c6)] px-3.5 py-2.5 text-md font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  className="rounded-2xl bg-[var(--c2)] px-3.5 py-2.5 text-md font-semibold text-white shadow-sm hover:text-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--c2)]"
                 >
-                  Learn More <span aria-hidden="true">&rarr;</span>
+                  Check it out! <span aria-hidden="true">&rarr;</span>
                 </Link>
                 {/* <Link href="/curriculum" className="text-sm font-semibold text-gray-900">
                   Learn More <span aria-hidden="true">&rarr;</span>

@@ -2,9 +2,9 @@ import Link from "next/link";
 
 export default function Testimonials() {
     return (
-      <section id="testimonials" className="py-10 sm:py-10 mx-auto px-6 lg:px-8 ">
+      <section id="testimonials" className="rounded-lg pb-3 bg-[var(--c1)] py-10 sm:py-10 mx-auto px-6 lg:px-8 ">
         <h2 className="text-5xl pl-6 font-bold tracking-tight text-gray-900 mx-auto max-w-3xl lg:max-w-7xl mb-8">100% Satisfaction Guaranteed</h2>
-        <div className="bg-white py-16 rounded-3xl sm:py-16 mx-auto max-w-[44rem] lg:max-w-[76rem] px-6 lg:px-8">
+        <div className="bg-white py-16 rounded-lg sm:py-16 mx-auto max-w-[44rem] lg:max-w-[76rem] px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className="flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 xl:pr-20">
               <img className="h-8 self-start" src="/images/nyu.png" alt="NYU Courant Logo" />
@@ -14,7 +14,7 @@ export default function Testimonials() {
                     “I didn't really see myself coding in college; but it happened to be part of my major requirements. After finishing this course; I'm grateful to have taken it. I really appreciate Prof. Lizardo for making the challenge of learning to code for the first time really approachable and engaging. Despite its difficulties and my frustration at times; I do feel smarter and more capable as a student; and I'm considering spending more time diving into the world of computer science.”
                   </p>
                 </blockquote>
-                <Link href="https://www.ratemyprofessors.com/professor/2719545" target="_blank" className="text-sm mt-4 font-semibold leading-6 text-gray-900 hover:text-[var(--c2)]">
+                <Link href="https://www.ratemyprofessors.com/professor/2719545" target="_blank" className="text-sm squiggle mt-4 font-semibold leading-6 text-gray-900 hover:text-[var(--c2)]">
                 Read more on RateMyProfessor <span aria-hidden="true">→</span>
               </Link>
                 <figcaption className="mt-10 flex items-center gap-x-6">
@@ -38,7 +38,7 @@ export default function Testimonials() {
                     “Julie always goes the extra mile to make the product look and work great and she is a tremendous team player. Seeing her work is a real treat. She is a professional, a fast learner, very knowledgable in web technologies and not afraid of a real challenge. In addition, she is a programmer with a good sense of design and can easily wear many hats and will always try to go to the next level.”
                   </p>
                 </blockquote>
-                <Link href="https://www.linkedin.com/in/julie-lizardo/" target="_blank" className="text-sm mt-4 font-semibold leading-6 text-gray-900 hover:text-[var(--c2)]">
+                <Link href="https://www.linkedin.com/in/julie-lizardo/" target="_blank" className="text-sm mt-4 squiggle font-semibold leading-6 text-gray-900 hover:text-[var(--c2)]">
                 Read more on LinkedIn <span aria-hidden="true">→</span>
               </Link>
                 <figcaption className="mt-10 flex items-center gap-x-6">
