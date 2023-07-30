@@ -1,16 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+@import url("https://use.typekit.net/izn4tjg.css");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* body{
+    background-color: hsl(300, 11%, 96%);
+} */
 
 :root{
     --c1: #F8A76C;
     --c2: #C2D8B8;
     --c3: #E94C42;
     --c4: #FDF1E5;
-    --c5: #FBCFC9;
-    --c6: #B1D2E0;
+    --c5: #aeb8fe;
+    --c6: #7d8cc4;
     
 }
+
 
 .blob{
     background: green url('/images/blob.svg');
@@ -21,6 +28,44 @@
     height: 100px;
     position: relative;
 }
+#logo{
+    font-family: "bimbo-pro-whiteboard", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    /* font-size: 2rem; */
+    /* font-family: "bimbo-pro-sharpie", sans-serif;
+font-weight: 500;
+font-style: normal; */
+font-size: 2rem;
+}
+h1, h2 {
+    font-family: 'Patrick Hand SC', cursive;
+}
 
+.shadow:hover{
+    box-shadow:none;
+}
+
+.shadow{
+    box-shadow: 9px 8px 5px var(--c5);
+}
+
+.shadow2{
+    box-shadow: 0px 8px 8px rgba(223, 222, 222, 0.698);
+}
+
+#curriculum{
+    background-color: var(--c5);
+    border-radius: 10rem 10rem 10rem 0rem;
+}
+
+#testimonials{
+    background-color: var(--c5);
+    border-radius: 10rem 10rem 10rem 0rem;
+    /* background-image: url("/images/Blob.svg"); */
+    /* background-position: center;
+    background-size: cover; */
+   
+}
 
 

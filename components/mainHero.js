@@ -1,6 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect } from 'react';
+let count = 0;
+function convertRange( value, r1, r2 ) { // linear interpolation
+  return ( value - r1[ 0 ] ) * ( r2[ 1 ] - r2[ 0 ] ) / ( r1[ 1 ] - r1[ 0 ] ) + r2[ 0 ];
+}
 
 export default function MainHero() {
   useEffect(() => {
@@ -11,63 +15,114 @@ export default function MainHero() {
       let mouth = document.getElementById("Mouth");
       let mouth2 = document.getElementById("Mouth_2");
       let mouth3 = document.getElementById("Mouth_3");
-      mouth3.style.display = "none";
-      mouth2.style.display = "none";
-
-
-      // setInterval( function(){
-      //   eyeR_open.style.display = "none";
-      //   eyeL_open.style.display = "none";
-          // setTimeout(() => {
-          //   eyeR_open.style.display = "block";
-          //   eyeL_open.style.display = "block";
-          // }, 80);
-      // },1500);
+    
+      // eye animations
+      // right
+      let pupilR = document.getElementById("r1");
+      let pupilR2 = document.getElementById("r2");
+      let pupilR3 = document.getElementById("r3");
+      let startrX = parseFloat(pupilR.getAttribute('cx'));
+      let startrX2 = parseFloat(pupilR2.getAttribute('cx'));
+      let startrX3 = parseFloat(pupilR3.getAttribute('cx'));
       
+      //left
+      let pupilL = document.getElementById("l1");
+      let pupilL2 = document.getElementById("l2");
+      let pupilL3 = document.getElementById("l3");
+      let startlX = parseFloat(pupilL.getAttribute('cx'));
+      let startlX2 = parseFloat(pupilL2.getAttribute('cx'));
+      let startlX3 = parseFloat(pupilL3.getAttribute('cx'));
 
+      let blink;
+      document.onmousemove = (e) => {
+        let mouseX = e.clientX;
+        let mouseY = e.clientY;
+
+        let newXR = convertRange(mouseX, [100, window.innerWidth], [startrX - 5, startrX +9])
+        let newXR2 = convertRange(mouseX, [100, window.innerWidth], [startrX2 - 5, startrX2 +9])
+        let newXR3 = convertRange(mouseX, [100, window.innerWidth], [startrX3 - 5, startrX3 +9])
+        pupilR.setAttribute("cx", newXR);
+        pupilR2.setAttribute("cx", newXR2);
+        pupilR3.setAttribute("cx", newXR3);
+
+        let newXL = convertRange(mouseX, [100, window.innerWidth], [startlX - 8.5, startlX +7])
+        let newXL2 = convertRange(mouseX, [100, window.innerWidth], [startlX2 - 8.5, startlX2 +7])
+        let newXL3 = convertRange(mouseX, [100, window.innerWidth], [startlX3 - 8.5, startlX3 +6])
+        pupilL.setAttribute("cx", newXL);
+        pupilL2.setAttribute("cx", newXL2);
+        pupilL3.setAttribute("cx", newXL3);
+      };
+
+      if (count==0){
+        count += 1;
+        blink = setInterval( function(){
+          eyeR_open.style.display = "none";
+          eyeL_open.style.display = "none";
+          // console.log("blink");
+            setTimeout(() => {
+              eyeR_open.style.display = "block";
+              eyeL_open.style.display = "block";
+              // console.log("close");
+            }, 600);
+        },3000);
+      }
+      
       me.onmouseover = function(){
-        console.log("here");
           eyeR_open.style.display = "none";
           eyeL_open.style.display = "none";
           mouth2.style.display = "block";
+          clearInterval(blink);
 
       };
       me.onmouseout = function(){
           eyeR_open.style.display = "block";
           eyeL_open.style.display = "block";
           mouth2.style.display = "none";
+
+          blink = setInterval( function(){
+            eyeR_open.style.display = "none";
+            eyeL_open.style.display = "none";
+            // console.log("blink 2");
+              setTimeout(() => {
+                eyeR_open.style.display = "block";
+                eyeL_open.style.display = "block";
+                // console.log("close");
+              }, 600);
+          },3000);
       };
-    }
-    
+    } 
     });
   
   return (
-    <div className="relative lg:min-h-[92vh] isolate overflow-hidden">
+    <div className="bg-white relative lg:min-h-[92vh] isolate overflow-hidden">
      <div className="mx-auto lg:min-h-[92vmin] lg:items-center max-w-7xl px-6 lg:flex lg:px-8"> 
         <div className="mx-auto max-w-2xl pb-24 lg:pb-0 lg:mx-0 lg:max-w-xl">
-          <h1 className="mt-10 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-          Web developer, educator, and digital creative.
+          <h1 className="mt-10 text-[5rem] font-bold tracking-tight text-center text-gray-900 sm:text-6xl">
+          hi, i am julie! <br/><br/> i am a <span >web developer</span>, <span>educator</span>, and <span>digital creative </span> based in boston, ma.
           </h1>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          {/* <h1 className="mt-10 text-6xl font-bold tracking-tight text-center text-gray-900 sm:text-6xl">
+          Hi, I am Julie! <br/><br/> I am a <span className="text-[var(--c5)]">web developer</span>, <span className="text-[var(--c1)]">educator</span>, and <span className="text-[var(--c3)]">digital creative </span> based in Boston, MA.
+          </h1> */}
+          {/* <p className="mt-6 text-lg leading-8 text-gray-600">
             Hi, my name is Julie Lizardo. I am a web developer, educator, and digital creative based in Boston, Massachusetts. I am passionate about computer science and helping misrepresented communities find opportunities in the fast-growing field of tech. 
             Hi, I am a I am a web developer, educator, and digital creative.
             Hi, I am a I am a web developer, educator, and digital creative.
             Hi, I am a I am a web developer, educator, and digital creative.
-          </p>
-          <div className=" mt-10 flex items-center gap-x-6">
-            <div className='blob'></div>
-            <Link
+          </p> */}
+          <div className="mt-10 flex gap-x-6">
+            
+            {/* <Link
               href="#start"
-              className="bg-black absolute ml-[2%] rounded-md px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="bg-black absolute rounded-2xl px-3.5 py-2.5  text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Get to know me <span aria-hidden="true">&rarr;</span>
-            </Link>
+            </Link> */}
           </div>
         </div>
 
         <div className="mx-auto flex-none lg:flex max-w-2xl">
           <div className="mx-auto flex-none">
-                <svg id="Me" className=" mx-auto lg:ml-11" width={850} data-name="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 638.0117 592.9951">
+                <svg id="Overall" className="mx-auto lg:ml-11" width={850} data-name="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 638.0117 592.9951">
                   <g id="Me" data-name="Me">
                   <g id="Layer_19" data-name="Layer 19">
                     <path d="m228.7549,591.6791c68.66-10.83,138.12-16.46,207.6-16.81,24.08-.12,49.66-.02,70.11-12.91,27.08-17.07,37.27-51.98,40.11-84.19s.67-65.64,12.09-95.84c15.05-39.79,51.43-67.82,68.61-106.71,19.45-44.02,11.05-97.23-13.75-138.38s-64.12-71.49-106.17-94.02c-27.86-14.93-57.37-26.89-88.05-34.18-118.7601-28.23-244.1901,16.07-345.9201,84.33-13.65,9.16-28.35,21.04-29.3,37.62-.89,15.49,10.67,28.6,15.19,43.42,5.46,17.92.23,37.57-8.4,54.17s-20.5,31.24-29.66,47.54c-36.4,64.74-23.81,150.92,21.37,209.71,45.18,58.79,117.28,117.12,186.17,106.25Z" fill="#fdf1e5"/>
@@ -153,8 +208,8 @@ export default function MainHero() {
                     <path d="m278.7749,371.5191c4.52,8.48,13.93,14.13,23.54,14.13,9.61.01,19.02-5.63,23.56-14.11" fill="none" stroke="#ad4450" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4"/>
                   </g>
                   <g id="Eyes_closed" data-name="Eyes closed">
-                    <path d="m243.8749,297.3991c-4.53-8.77-12.63-15.86-22.23-18.16s-20.52.65-26.92,8.16c-1.8,2.11-3.48,4.7-6.19,5.33-3.16.74-6.16-1.54-8.61-3.68,1.04,5.52,2.08,11.04,3.12,16.56-3.87-1.03-7.75-2.07-11.62-3.1,4.63,5.98,8.66,12.43,12.33,19.39,2.83-6.16,4.58-12.76,7.38-18.93,2.8-6.17,6.92-12.09,12.97-15.13,6.93-3.48,15.41-2.61,22.52.49s13.14,8.17,19.07,13.18c-.13-2.06-1.05-4.07-1.82-4.11Z" stroke="#000" stroke-miterlimit="10"/>
-                    <path d="m358.5549,297.3991c4.53-8.77,12.63-15.86,22.23-18.16,9.6-2.3,20.52.65,26.92,8.16,1.8,2.11,3.48,4.7,6.19,5.33,3.16.74,6.16-1.54,8.61-3.68-1.04,5.52-2.08,11.04-3.12,16.56,3.87-1.03,7.75-2.07,11.62-3.1-4.63,5.98-8.66,12.43-12.33,19.39-2.83-6.16-4.58-12.76-7.38-18.93-2.8-6.17-6.92-12.09-12.97-15.13-6.93-3.48-15.41-2.61-22.52.49s-13.14,8.17-19.07,13.18c.12-2.06,1.05-4.07,1.82-4.11Z" stroke="#000" stroke-miterlimit="10"/>
+                    <path d="m243.8749,297.3991c-4.53-8.77-12.63-15.86-22.23-18.16s-20.52.65-26.92,8.16c-1.8,2.11-3.48,4.7-6.19,5.33-3.16.74-6.16-1.54-8.61-3.68,1.04,5.52,2.08,11.04,3.12,16.56-3.87-1.03-7.75-2.07-11.62-3.1,4.63,5.98,8.66,12.43,12.33,19.39,2.83-6.16,4.58-12.76,7.38-18.93,2.8-6.17,6.92-12.09,12.97-15.13,6.93-3.48,15.41-2.61,22.52.49s13.14,8.17,19.07,13.18c-.13-2.06-1.05-4.07-1.82-4.11Z" stroke="#000" strokeMiterlimit="10"/>
+                    <path d="m358.5549,297.3991c4.53-8.77,12.63-15.86,22.23-18.16,9.6-2.3,20.52.65,26.92,8.16,1.8,2.11,3.48,4.7,6.19,5.33,3.16.74,6.16-1.54,8.61-3.68-1.04,5.52-2.08,11.04-3.12,16.56,3.87-1.03,7.75-2.07,11.62-3.1-4.63,5.98-8.66,12.43-12.33,19.39-2.83-6.16-4.58-12.76-7.38-18.93-2.8-6.17-6.92-12.09-12.97-15.13-6.93-3.48-15.41-2.61-22.52.49s-13.14,8.17-19.07,13.18c.12-2.06,1.05-4.07,1.82-4.11Z" stroke="#000" strokeMiterlimit="10"/>
                   </g>
                   <g id="Right_Eye" data-name="Right Eye">
                     <g id="Base">
@@ -162,9 +217,9 @@ export default function MainHero() {
                       <path d="m354.5849,332.6491c-2.18-10.32.51-21.56,7.12-29.78,6.61-8.21,17.02-13.24,27.57-13.31,6.46-.04,13.07,1.79,18.01,5.95,6.13,5.15,9.08,13.37,9.34,21.37.35,10.48-3.7,21.16-11.38,28.3s-18.98,10.38-29.14,7.79-19.55-11-21.52-20.32Z" fill="#fff" stroke="#000" strokeLinecap="round" strokeLinejoin="round"/>
                     </g>
                     <g id="Pupil">
-                      <ellipse cx="383.2949" cy="317.1291" rx="23.32" ry="29" fill="#381e1d" stroke="#000" strokeLinecap="round" strokeLinejoin="round"/>
-                      <ellipse cx="394.2449" cy="299.8191" rx="9" ry="10.25" fill="#fff" stroke="#000" strokeLinecap="round" strokeLinejoin="round"/>
-                      <circle cx="391.7449" cy="330.0691" r="2.5" fill="#fff" stroke="#000" strokeLinecap="round" strokeLinejoin="round"/>
+                      <ellipse id="r1" cx="383.2949" cy="317.1291" rx="23.32" ry="29" fill="#381e1d" stroke="#000" strokeLinecap="round" strokeLinejoin="round"/>
+                      <ellipse id="r2" cx="394.2449" cy="299.8191" rx="9" ry="10.25" fill="#fff" stroke="#000" strokeLinecap="round" strokeLinejoin="round"/>
+                      <circle  id="r3" cx="391.7449" cy="330.0691" r="2.5" fill="#fff" stroke="#000" strokeLinecap="round" strokeLinejoin="round"/>
                     </g>
                   </g>
                   <g id="Left_Eye" data-name="Left Eye">
@@ -173,16 +228,16 @@ export default function MainHero() {
                       <path d="m248.3749,332.4391c2.18-10.32-.51-21.56-7.12-29.78-6.61-8.21-17.02-13.24-27.57-13.31-6.46-.04-13.07,1.79-18.01,5.95-6.13,5.15-9.08,13.37-9.34,21.37-.35,10.48,3.7,21.16,11.38,28.3s18.98,10.38,29.14,7.79c10.15-2.6,19.55-11,21.52-20.32Z" fill="#fff" stroke="#000" strokeLinecap="round" strokeLinejoin="round"/>
                     </g>
                     <g id="Pupil-2" data-name="Pupil">
-                      <ellipse cx="219.6649" cy="316.9291" rx="23.32" ry="29" fill="#381e1d" stroke="#000" strokeLinecap="round" strokeLinejoin="round"/>
-                      <ellipse cx="208.7149" cy="299.6091" rx="9" ry="10.25" fill="#fff" stroke="#000" strokeLinecap="round" strokeLinejoin="round"/>
-                      <circle cx="211.2149" cy="329.8591" r="2.5" fill="#fff" stroke="#000" strokeLinecap="round" strokeLinejoin="round"/>
+                      <ellipse id="l1" cx="219.6649" cy="316.9291" rx="23.32" ry="29" fill="#381e1d" stroke="#000" strokeLinecap="round" strokeLinejoin="round"/>
+                      <ellipse id="l2" cx="208.7149" cy="299.6091" rx="9" ry="10.25" fill="#fff" stroke="#000" strokeLinecap="round" strokeLinejoin="round"/>
+                      <circle id="l3" cx="211.2149" cy="329.8591" r="2.5" fill="#fff" stroke="#000" strokeLinecap="round" strokeLinejoin="round"/>
                     </g>
                   </g>
-                  <g id="Mouth_3" data-name="Mouth 3">
+                  {/* <g id="Mouth_3" data-name="Mouth 3">
                     <ellipse cx="302.5649" cy="389.6491" rx="10.67" ry="10.5" fill="#ad4450"/>
-                  </g>
-                  <g id="Mouth_2" data-name="Mouth 2">
-                    <path d="m325.8749,371.5491c-4.53,8.48-13.94,14.11-23.56,14.11-9.61-.01-19.02-5.65-23.3-12.5-.83,8.61,3.5,17.52,10.79,22.18s17.2,4.84,24.66.47,12.15-13.12,11.41-24.26Z" fill="#ad4450" stroke="#ad4450" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+                  </g> */}
+                  <g id="Mouth_2" style={{display:"none"}} data-name="Mouth 2">
+                    <path d="m325.8749,371.5491c-4.53,8.48-13.94,14.11-23.56,14.11-9.61-.01-19.02-5.65-23.3-12.5-.83,8.61,3.5,17.52,10.79,22.18s17.2,4.84,24.66.47,12.15-13.12,11.41-24.26Z" fill="#ad4450" stroke="#ad4450" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4"/>
                   </g>
                   </g>
                 </svg>

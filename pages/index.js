@@ -1,38 +1,35 @@
-import { useState } from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
 
 // import components
 import Layout from '../components/layout';
 import MainHero from '../components/mainHero';
 import Logos from '../components/logos';
 import Container from '../components/container';
-import MediaObject from '../components/mediaobject';
+import MediaObject from '../components/mediaObject';
 import Testimonials from '../components/testimonials'
 import Contact from '../components/contact';
-
 
 //latest projects
 const projects = [
     {
         id: 1,
         title:"Cog-Sci-DIY",
-        tools:[{name:'Node.js', id:"1"}, {name:'MySQL', id:"2"}, {name:'React.js', id:"3"}, {name:'SASS', id:"4"}], 
-        descript:"!Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam expedita quia omnis voluptatem. Minus quidem ipsam quia iusto."
+        tools:[{name:'Node.js', id:"1"}, {name:'MySQL', id:"2"}, {name:'React.js', id:"3"}, {name:'SASS', id:"4"}, {name:'Firebase', id:"5"}, {name:'Figma', id:"6"}], 
+        descript:"A web application used to conduct research in fields of linguistics and cognitive psychology with high school students and freshman college students. It features a content management system that includes web forms to create web pages, upload content, add surveys, hyperlinks and forum discussion boards."
         , image:"/images/OSU.png",
-        url:"",
+        url:"https://create.nyu.edu/cogscidiy/",
         code:"",
         alt: "Cog-Sci-DIY Screenshot"
     },
     {
         id:2,
-        title:"My Personal Website",
-        tools:[{name:'Next.js', id:"1"}, {name:'React.js', id:"2"}, {name:'Tailwind CSS', id:"3"}], 
-        descript:"!Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam expedita quia omnis voluptatem. Minus quidem ipsam quia iusto."
+        title:"julielizardo.com",
+        tools:[{name:'Next.js', id:"1"}, {name:'React.js', id:"2"}, {name:'Tailwind CSS', id:"3"}, {name:'Figma', id:"4"}, {name:'Adobe Suite', id:"5"}], 
+        descript:"Tired of my previous website design, I built version 2.0! I wanted to include more playfulness to the front-end and have the asthetic reflect my personality more."
         , image:"/images/OSU.png",
-        url:"",
-        code:"",
-        alt: "Cog-Sci-DIY Screenshot"
+        url:"/",
+        code:"#",
+        alt: "Personal Website Screenshot"
     }
 ]
 
@@ -50,11 +47,11 @@ export default function HomePage() {
                 <MainHero>
                 </MainHero>
 
-                <Logos id="start">
+                <Logos id="curriculum">
                 </Logos>
-                <Container>
-                    <h2 className="text-3xl font-bold tracking-tight text-gray-900">Knowledge in 17+ programming tools and frameworks</h2>
-                    <p className="mt-6 text-lg mb-8 leading-8 text-gray-600">
+                <Container id="projects">
+                    <h2 className="mt-20 text-5xl font-bold tracking-tight text-gray-900">Knowledge in 17+ programming tools and frameworks</h2>
+                    <p className="mt-8 text-xl mb-8 leading-8 text-gray-600">
                     I have taught courses in computer programming principles, web development, artificial intelligence, and ethics in computer science. My students range from middle school to graduate students and working professionals.
                     Check out my latest projects below!
                     </p>
@@ -73,14 +70,11 @@ export default function HomePage() {
                     ))}
                     
                 </Container>
-                <Container>
-                    <h2 className="text-3xl font-bold tracking-tight text-gray-900">100% Satisfaction Guaranteed</h2>
-                    <Testimonials>
-                    
-                </Testimonials>
-                </Container>
                 
-                <Contact></Contact>
+                <Testimonials>  
+                </Testimonials>
+               
+                
             </Layout>
 
         </>
