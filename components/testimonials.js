@@ -7,7 +7,7 @@ export default function Testimonials() {
         <div className="bg-white py-16 rounded-lg sm:py-16 mx-auto max-w-[44rem] lg:max-w-[76rem] px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className="flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 xl:pr-20">
-              <img className="h-8 self-start" src="/images/nyu.png" alt="NYU Courant Logo" />
+              <img className="h-8 self-start" src="/images/nyu.png" alt="NYU Logo" />
               <figure className="mt-10 flex flex-auto flex-col justify-between">
                 <blockquote className="text-lg leading-8 text-gray-600">
                   <p>
