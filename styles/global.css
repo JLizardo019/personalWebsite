@@ -13,25 +13,52 @@
     --c3: #70FFDB ;
     --c5:#B0F8E6;
 }
-
-@keyframes animateDash {
-    to {
-      stroke-dashoffset: 0;
+  
+@keyframes animateName {
+    from{
+        opacity: 1;
     }
-  }
-
-svg{
-	stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  pointer-events: none; 
- }
-
-#logoA{
-    animation: animateDash 2s linear forwards infinite;
+    to{
+        opacity:1;
+        stroke-dashoffset: 8150;
+    }
 }
 
-#layout{
-    display: none;
+@keyframes animateHeart {
+    from{ opacity:0;}
+    to{ opacity:1;}
+}
+
+@keyframes animateDot {
+    0%{ opacity:1;}
+    100%{ opacity:1;}
+}
+
+svg#animation{
+    width:30%;
+      stroke-dasharray: 4100;
+    stroke-dashoffset: 4100;
+    pointer-events: none; 
+}
+  
+#name{
+    opacity: 0;
+      animation: animateName 2s linear forwards;
+      animation-delay: 1s;
+}
+  
+#dot{
+    stroke-dasharray: none;
+    opacity:0;
+    animation: animateDot 1s linear forwards;
+    animation-delay: 3.5s;
+}
+  
+#heart{
+    opacity:0;
+    stroke-dasharray: none;
+    animation: animateHeart 2s linear forwards;
+    animation-delay: 4s;
 }
 
 .squiggle 

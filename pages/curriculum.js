@@ -18,8 +18,8 @@ export default function CurriculumPage() {
             <Layout>
                 <Container>
                     <h2 className="mt-2 text-center text-5xl font-bold  text-gray-900">Curriculum</h2>
-
-                    <h4 className='text-2xl mt-8 font-bold text-gray-900'>New York University</h4>
+{/* make the h4 bars yellow */}
+                    <h4 className='bg-[var(--c1)] p-2 rounded-lg text-2xl mt-8 font-bold text-gray-900'>New York University</h4>
                         <Link target="_blank" href="https://cs.nyu.edu/courses/spring23/CSCI-UA.0002-005/"><p className="mt-12 text-xl font-semibold squiggle hover:text-[var(--c2)]">CSCI-UA.0002 Introduction to Computer Programming</p></Link>   
                         <p className='mt-6 text-xl leading-8 text-gray-600' >(4 credits) This course is designed to be an introduction to the fundamentals of computer programming, which is the foundation of Computer Science. Students will design, write and debug computer programs using Python. No knowledge of programming is assumed.</p>
                  
@@ -35,7 +35,7 @@ export default function CurriculumPage() {
                  
 
                     
-                    <h4 className='text-2xl mt-16 font-bold text-gray-900'>All Star Code</h4>
+                    <h4 className='bg-[var(--c1)] p-2 rounded-lg text-2xl mt-16 font-bold text-gray-900'>All Star Code</h4>
                         <Link href="https://allstarcode.org/" target="blank"><p className="mt-12 text-xl font-semibold squiggle hover:text-[var(--c2)]">Machine Learning with ml5.js Lesson</p></Link>   
                         <p className='mt-6 text-xl leading-8 text-gray-600'>Ever asked Alexa to play your favorite song? Asked Siri about the current weather? Maybe you watched a recommended TV show from Netflix last night. These are all examples of Machine Learning algorithms working in your day-to-day life! Machine Learning, a subset of artificial intelligence using datasets to learn over time, is a way for computers to teach themselves a concept without explicit programming. Get a taste of how you can build your own applications using Machine Learning algorithms!</p>
                         
@@ -43,9 +43,8 @@ export default function CurriculumPage() {
 
                         <Link href="https://www.crackthecode.zone" target="_blank"><p className="mt-12 text-xl font-semibold squiggle hover:text-[var(--c2)]">Crack the Code: Binary Numbers Lesson</p></Link>   
                         <p className='mt-6 text-xl leading-8 text-gray-600'>Crack the Code offers an All Star Code coding challenge in three parts and will help users fast track their applications in the admissions process for the 2022 Summer Intensive. Each challenge consists of a video lesson and a series of questions. I designed and recorded the second lesson in the series on binary numbers.</p>
-                        <div class="iframe-wrapper">
                             <iframe className="mx-auto my-4 w-full h-[40rem]" width="560" height="315" src="https://www.youtube-nocookie.com/embed/48h0KTxUxyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
+                        
 
                 </Container>
             </Layout>

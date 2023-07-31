@@ -25,34 +25,13 @@ export default function Logos({id}) {
                 </Link> */}
               </div>
             </div>
-            <div className="mx-auto grid w-full max-w-[43rem] lg:max-w-xl grid-cols-2 items-center gap-y-12 sm:gap-y-14 lg:mx-0  lg:pl-8">
+            <div className="mx-auto grid w-full max-w-[43rem] lg:max-w-xl items-center lg:mx-0  lg:pl-8">
               <Image
-                className="max-h-16 w-full object-contain object-left"
-                src="/images/nyu.png"
-                alt="NYU"
-                width={192}
-                height={12}
-              />
-              <Image
-                className="h-full max-w-16 object-contain object-left"
-                src="/images/asc.webp"
-                alt="All Star Code"
-                width={200}
-                height={200}
-              />
-              <Image
-                className="h-full max-w-16 object-contain object-left"
-                src="/images/tlt.png"
-                alt="Teachers Lead Tech"
-                width={199}
-                height={160}
-              />
-              <Image
-                className="h-full max-w-10 object-contain object-left"
-                src="/images/pi.png"
-                alt="Project InkBlot"
-                width={190}
-                height={190}
+                className="rounded-lg mx-auto w-[80%] lg:w-full object-contain object-left"
+                src="/images/curriculum_logos.png"
+                alt="NYU, TLT, ASC, and PI logos"
+                width={2560}
+                height={2560}
               />
             </div>
           </div>
