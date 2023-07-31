@@ -90,14 +90,14 @@ export default function MainHero() {
   return (
     <div className="bg-white relative lg:min-h-[86vh] isolate overflow-hidden">
      <div className="mx-auto sm:mb-8 lg:min-h-[86vmin] lg:items-center max-w-7xl px-6 lg:flex lg:px-8"> 
-        <div className="mx-auto max-w-2xl pb-6 lg:pb-0 lg:mx-0 lg:max-w-xl">
+        <div id="title" className="mx-auto max-w-2xl pb-6 lg:pb-0 lg:mx-0 lg:max-w-xl">
           <h1 className="mt-4 text-[5rem] font-bold tracking-tight text-center text-gray-900 sm:text-6xl">
           hi, i am julie! <br/><br/> i am a <span >web developer</span>, <span>educator</span>, and <span>digital creative </span> based in boston, ma.
           </h1>
           
         </div>
 
-        <div className="mx-auto flex-none lg:flex max-w-2xl">
+        <div id="character" className="mx-auto flex-none lg:flex max-w-2xl">
           <div className="mx-auto flex-none">
                 <svg id="Overall" className="mx-auto w-[80%] lg:ml-11" width={850} data-name="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 638.0117 592.9951">
                   <g id="Me" data-name="Me">

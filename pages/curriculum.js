@@ -1,5 +1,8 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { useEffect } from 'react';
+
+import 'animate.css';
 
 // import components
 import Layout from '../components/layout';
@@ -7,6 +10,25 @@ import Container from '../components/container';
 
 
 export default function CurriculumPage() {
+
+    useEffect(() => {
+
+        if(document){
+            let nav = document.getElementById("navbar");
+            let text = document.getElementById("text");
+            let subtitle = document.getElementById("subtitle");
+            let title = document.getElementById("title");
+            nav.style.animation = "fadeInDown 1.5s";
+            title.style.animation = "fadeInDown 1.5s";
+            subtitle.style.opacity= 0;
+            subtitle.style.animation = "fadeInDown 1.5s forwards";
+            subtitle.style.animationDelay = "0.15s";
+            text.style.animation = "fadeIn 2s forwards";
+            text.style.opacity= 0;
+            text.style.animationDelay = "0.15s";
+        }
+    
+    });
 
     return(
         <>
@@ -17,9 +39,10 @@ export default function CurriculumPage() {
             </Head>
             <Layout>
                 <Container>
-                    <h2 className="mt-2 text-center text-5xl font-bold  text-gray-900">Curriculum</h2>
+                    <h2 id="title" className="mt-2 text-center text-5xl font-bold  text-gray-900">Curriculum</h2>
 {/* make the h4 bars yellow */}
-                    <h4 className='bg-[var(--c1)] p-2 rounded-lg text-2xl mt-8 font-bold text-gray-900'>New York University</h4>
+                    <h4 id="subtitle" className='bg-[var(--c1)] p-2 rounded-lg text-2xl mt-8 font-bold text-gray-900'>New York University</h4>
+                        <div id="text">
                         <Link target="_blank" href="https://cs.nyu.edu/courses/spring23/CSCI-UA.0002-005/"><p className="mt-12 text-xl font-semibold squiggle hover:text-[var(--c2)]">CSCI-UA.0002 Introduction to Computer Programming</p></Link>   
                         <p className='mt-6 text-xl leading-8 text-gray-600' >(4 credits) This course is designed to be an introduction to the fundamentals of computer programming, which is the foundation of Computer Science. Students will design, write and debug computer programs using Python. No knowledge of programming is assumed.</p>
                  
@@ -33,7 +56,7 @@ export default function CurriculumPage() {
                         <Link target="_blank" href="https://itp.nyu.edu/ima/courses/code-2/"><p className="mt-12 text-xl font-semibold squiggle hover:text-[var(--c2)]">IMNY-UT.0002 Code! 2</p></Link>   
                         <p className='mt-6 text-xl leading-8 text-gray-600'>(2 credits) This online 7 week course focuses on applying fundamentals of computer programming in JavaScript to interactive media projects. In particular, it leverages the p5.js creative computing environment which is oriented towards visual displays on desktops, laptops, tablets or smartphones. The course is designed for students with a foundation level understanding of programming in JavaScript with the p5.js library. The Code! course (or equivalent) is a prerequisite.</p>
                  
-
+                        </div>
                     
                     <h4 className='bg-[var(--c1)] p-2 rounded-lg text-2xl mt-16 font-bold text-gray-900'>All Star Code</h4>
                         <Link href="https://allstarcode.org/" target="blank"><p className="mt-12 text-xl font-semibold squiggle hover:text-[var(--c2)]">Machine Learning with ml5.js Lesson</p></Link>   

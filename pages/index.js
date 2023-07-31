@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { useEffect } from 'react';
+import 'animate.css';
 
 // import components
 import Layout from '../components/layout';
@@ -40,14 +41,21 @@ export default function HomePage() {
         if(document){
             let opener = document.getElementById("opener");
             let page = document.getElementById("layout");
+            let nav = document.getElementById("navbar");
+            let title = document.getElementById("title");
+            let character = document.getElementById("character");
             page.style.display = "none";
 
             setTimeout(() => {
-                opener.style.animation = "animateHeart 2s linear forwards"
                 opener.style.display = "none";
                 page.style.display = "block";
+                nav.style.animation = "fadeInDown 1.5s";
+                title.style.animation = "fadeInLeft 1.5s";
+                character.style.animation = "fadeInRight 1.5s";
                
             }, 5500);
+
+            
         }
         
     });
