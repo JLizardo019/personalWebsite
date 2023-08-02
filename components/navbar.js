@@ -56,11 +56,11 @@ export default function NavBar() {
 
   return (
     <header id="navbar" className="bg-white shadow2 z-10 lg:sticky lg:top-0">
-      <nav className=" lg:sticky lg:top-0 mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <nav className=" lg:sticky lg:top-0 mx-auto flex max-w-7xl items-center justify-between p-3 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Julie Lizardo</span>
-            <img className="h-[4.6rem] hover:h-[5rem]" src="/images/logo.svg" id='logo'/>
+            <img className="h-[3.6rem] hover:h-[4rem]" src="/images/logo.svg" id='logo'/>
 
           </Link>
         </div>
@@ -71,12 +71,12 @@ export default function NavBar() {
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
-            <Bars3Icon className="h-7 w-7" aria-hidden="true" />
+            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
-            <Link key={item.name} href={item.href} className="text-md font-semibold leading-6 text-gray-900 hover:text-[var(--c2)]">
+            <Link key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900 hover:text-[var(--c2)]">
               {item.name}
             </Link>
           ))}
@@ -85,7 +85,7 @@ export default function NavBar() {
         {icons.map((item) => (
               <Link target="_blank" title={item.name} key={item.name} href={item.href} className={"text-gray-400 "+item.color}>
                 <span className="sr-only">{item.name}</span>
-                <item.icon className="h-7 w-7" aria-hidden="true" />
+                <item.icon className="h-6 w-6" aria-hidden="true" />
               </Link>
             ))}
         </div>
@@ -104,7 +104,7 @@ export default function NavBar() {
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
-              <XMarkIcon className="h-7 w-7" aria-hidden="true" />
+              <XMarkIcon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
           <div className="mt-6 flow-root">
@@ -114,7 +114,7 @@ export default function NavBar() {
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="-mx-3 block text-md rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:text-[var(--c2)]"
+                    className="-mx-3 block text-sm rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:text-[var(--c2)]"
                   >
                     {item.name}
                   </Link>
@@ -124,7 +124,7 @@ export default function NavBar() {
                 {icons.map((item) => (
                 <Link target="_blank" title={item.name} key={item.name} href={item.href} className={"text-gray-400 "+item.color}>
                   <span className="sr-only">{item.name}</span>
-                  <item.icon className="h-7 w-7" aria-hidden="true" />
+                  <item.icon className="h-6 w-6" aria-hidden="true" />
                 </Link>
               ))}
               </div>

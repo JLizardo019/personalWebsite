@@ -25,10 +25,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/curriculum": [
+    "/about": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/curriculum.js"
+      "static/chunks/pages/about.js"
     ]
   },
   "ampFirstPages": []

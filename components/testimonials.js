@@ -3,8 +3,8 @@ import Link from "next/link";
 export default function Testimonials() {
     return (
       <section id="testimonials" className="rounded-lg pb-3 bg-[var(--c1)] py-10 sm:py-10 mx-auto px-6 lg:px-8 ">
-        <h2 className="text-5xl pl-6 font-bold tracking-tight text-gray-900 mx-auto max-w-3xl lg:max-w-7xl mb-8">100% Satisfaction Guaranteed</h2>
-        <div className="bg-white py-16 rounded-lg sm:py-16 mx-auto max-w-[44rem] lg:max-w-[76rem] px-6 lg:px-8">
+        <h2 className="text-4xl pl-6 font-bold tracking-tight text-gray-900 mx-auto max-w-3xl lg:max-w-7xl mb-8">100% Satisfaction Guaranteed</h2>
+        <div className="bg-white py-4 rounded-lg sm:py-16 mx-auto max-w-[44rem] lg:max-w-[76rem] px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className="flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 xl:pr-20">
               <img className="h-8 self-start" src="/images/nyu.png" alt="NYU Logo" />
