@@ -15,7 +15,7 @@ const projects = [
     {
         id: 1,
         title:"Cog-Sci-DIY",
-        tools:[{name:'Node.js', id:"1"}, {name:'MySQL', id:"2"}, {name:'React.js', id:"3"}, {name:'SASS', id:"4"}, {name:'Firebase', id:"5"}, {name:'Figma', id:"6"}], 
+        tools:[{name:'Node.js', id:"1"}, {name:'SQL', id:"2"}, {name:'React.js', id:"3"}, {name:'SASS', id:"4"}, {name:'Firebase', id:"5"}, {name:'Figma', id:"6"}], 
         descript:"A web application used to conduct research in fields of linguistics and cognitive psychology with high school students and freshman college students. It features a content management system that includes web forms to create web pages, upload content, add surveys, hyperlinks and forum discussion boards."
         , image:"/images/OSU.png",
         url:"https://create.nyu.edu/cogscidiy/",
