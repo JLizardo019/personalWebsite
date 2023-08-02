@@ -31,6 +31,16 @@ const projects = [
         url:"/",
         code:"",
         alt: "Personal Website Screenshot"
+    },
+    {
+        id:3,
+        title:"Fun Pixel Mirror",
+        tools:[{name:'p5.js', id:"1"}, {name:'HTML', id:"2"}, {name:'CSS', id:"3"}], 
+        descript:"I made a 4-tone mirror that uses your webcam and varying text symbols as pixels!"
+        , image:"/images/pixel_mirror.png",
+        url:"https://editor.p5js.org/JLizardo019/full/H3ANvPjVs",
+        code:"https://editor.p5js.org/JLizardo019/sketches/H3ANvPjVs",
+        alt: "Personal Website Screenshot"
     }
 ]
 
