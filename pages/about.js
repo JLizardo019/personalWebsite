@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Layout from '../components/layout';
 import Container from '../components/container';
 import { useEffect } from 'react';
+import Script from 'next/script';
 
 import 'animate.css';
 
@@ -29,7 +30,17 @@ export default function AboutPage() {
     return(
         <Layout>
             <Head>
-                <title>About</title>
+                <Script src="https://www.googletagmanager.com/gtag/js?id=G-NPDX9RG0NH"></Script>
+                <Script id="google-analytics">
+                    {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-NPDX9RG0NH');`
+                    }
+                </Script>
+                <title>About | Julie Lizardo</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 <link rel="icon" type="image/x-png" href="/images/favicon.png"></link>
 
@@ -41,11 +52,11 @@ export default function AboutPage() {
                         <Image className='border-[var(--c1)] border-4 sm:max-w-[20rem] lg:max-w-[25rem] lg:max-h-[25rem] rounded-full' width={1280} height={1280} src="/images/headshot.png" alt="Image of Julie" priority={true}/>
                     </div>
                     <div id="text" className='lg:order-first my-3 p-3 lg:w-2/4'>
-                        <p className='mb-8 text-lg leading-8 text-gray-600'>Hello, Thanks for stopping by! I am a proud Dominican and first generation immigrant. I received a Bachelor of Arts from NYU College of Arts and Science in biology with a focus in ecology. I also completed a Master of Professional Studies at NYU Interactive Telecommunications Program in computer science and art. My research encompasses creating various web tools that range from generative art to dynamic maps of NYC’s trash system. One of my life-long goals is to promote computer science education and tackle the environmental racism faced in misrepresented communities.</p>
+                        <p className='mb-8 text-lg leading-8 text-gray-600'>Hello, Thanks for stopping by! I am a proud Dominican and first generation immigrant. I received a Bachelor of Arts from NYU College of Arts and Science in biology with a focus in ecology, and a Master of Professional Studies at NYU Interactive Telecommunications Program in computer science and art. My research encompasses creating various web tools that range from generative art to dynamic maps of NYC’s trash system. One of my life-long goals is to promote computer science education and tackle the environmental racism faced in misrepresented communities.</p>
                         
-                        <p className='mb-8 text-lg leading-8 text-gray-600'>Growing up, I was never exposed to computer science and it never appeared as a possible career choice that was accessible to me. I was intimidated by the complexity of the field and how it seemed to be catered to men. It was not until college that I had the opportunity to enroll in a computer science course as an elective. Therefore, it has became my personal mission to encourage students from misrepresented communities to pursue computer science and STEM fields.</p>
+                        <p className='mb-8 text-lg leading-8 text-gray-600'>Growing up, I was never exposed to computer science and it never appeared as a possible career choice that was accessible to me. I was intimidated by the complexity of the field and how it seemed catered to men. It was not until college that I had the opportunity to enroll in a computer science course as an elective. Therefore, it has become my personal mission to encourage students from misrepresented communities to pursue computer science and STEM fields.</p>
                         
-                        <p className='text-lg leading-8 text-gray-600'>Today, I am an Visiting Clinical Assistant Professor at NYU’s Department of Computer Science and a freelance web developer.</p>
+                        <p className='text-lg leading-8 text-gray-600'>Today, I am a Visiting Clinical Assistant Professor at NYU’s Department of Computer Science and a freelance web developer.</p>
                     </div>
                 </div>
                 <div className='mt-8'>

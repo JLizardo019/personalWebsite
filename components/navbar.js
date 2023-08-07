@@ -6,7 +6,7 @@ import Link from 'next/link';
 const navigation = [
   { name: 'About', href: '/about' },
   { name: 'Curriculum', href: '/curriculum' },
-  { name: 'Projects', href: '/#projects' }
+  { name: 'Projects', href: '/projects' }
 ];
 
 const icons = [
@@ -114,7 +114,7 @@ export default function NavBar() {
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="-mx-3 block text-sm rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:text-[var(--c2)]"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:text-[var(--c2)]"
                   >
                     {item.name}
                   </Link>

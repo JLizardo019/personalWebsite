@@ -3,15 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 :root{
     --c1:#fef8b4;
     --c2: #FF7094;
-    --c4: #FDF1E5;
-
-    --c3: #70FFDB ;
-    --c5:#B0F8E6;
+    
+    --c3: rgba(255, 252, 252, 0.684);
 }
   
 @keyframes animateName {
@@ -43,23 +39,24 @@ svg#animation{
   
 #name{
     opacity: 0;
-      animation: animateName 2s linear forwards;
-      animation-delay: 1s;
+      animation: animateName 1.5s linear forwards;
+      animation-delay: 0.5s;
 }
   
 #dot{
     stroke-dasharray: none;
     opacity:0;
-    animation: animateDot 1s linear forwards;
-    animation-delay: 3.5s;
+    animation: animateDot 0.5s linear forwards;
+    animation-delay: 2.5s;
 }
   
 #heart{
     opacity:0;
     stroke-dasharray: none;
-    animation: animateHeart 2s linear forwards;
-    animation-delay: 4s;
-}
+    animation: animateHeart 1s linear forwards;
+    animation-delay: 3s;
+} 
+
 
 .squiggle 
 {
@@ -79,14 +76,6 @@ h1, h2 {
     font-family: 'Patrick Hand SC', cursive;
 }
 
-.shadow:hover{
-    box-shadow:none;
-}
-
-.shadow{
-    box-shadow: 9px 8px 5px var(--c5);
-}
-
 .shadow2{
     box-shadow: 0px 8px 8px rgba(223, 222, 222, 0.698);
 }
@@ -96,4 +85,30 @@ h1, h2 {
     margin: auto;
 }
 
+/* large sizes */
+@media (min-width: 1024px) { 
+    html{
+        font-size: 16px;
+    }
+}
 
+/* medium sizes */
+@media (min-width: 768px) { 
+    html{
+        font-size: 15px;
+    }
+}
+
+/* small devices */
+@media (min-width: 640px) {
+    html{
+        font-size: 14px;
+    }
+}
+
+/* small devices */
+@media (min-width: 0px) {
+    html{
+        font-size: 14px;
+    }
+}
