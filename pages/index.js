@@ -96,7 +96,7 @@ export default function HomePage() {
                     className="rounded-2xl bg-[var(--c2)] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:text-base focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--c2)]">
                             Check out my latest projects! <span aria-hidden="true">&rarr;</span>
                     </Link> */}
-                    <Link href="/projects" target="_blank" className="text-lg mt-4 mb-6 squiggle font-semibold leading-6 text-gray-900 hover:text-[var(--c2)]">
+                    <Link href="/projects" className="text-lg mt-4 mb-6 squiggle font-semibold leading-6 text-gray-900 hover:text-[var(--c2)]">
                 Check out my latest projects! <span aria-hidden="true">→</span>
               </Link>
                     
