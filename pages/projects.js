@@ -76,7 +76,7 @@ export default function ProjectsPage() {
             </Head>
             <Container>
                 <h2 id="title" className="mt-2 text-center text-4xl font-bold  text-gray-900">Projects</h2>
-
+                <p className='text-sm mt-3 text-gray-600'><strong>Note:</strong> my porfolio is currently under construction! I am purging old work and writing documentation for new projects I have made. This applies to Github and CodePen. Thank you for your patience!</p>
                 <div id="text">
                     {projects.map((item) => (
                         <MediaObject 

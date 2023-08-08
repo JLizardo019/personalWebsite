@@ -54,17 +54,22 @@ export default function CurriculumPage() {
                     
                     <h4 id="subtitle" className='bg-[var(--c1)] p-2 rounded-lg text-xl mt-8 font-bold text-gray-900'>New York University</h4>
                     <div id="nyu">
-                        <Link target="_blank" href="https://cs.nyu.edu/courses/spring23/CSCI-UA.0002-005/"><p className="mt-12 text-lg font-semibold squiggle hover:text-[var(--c2)]">CSCI-UA.0002 Introduction to Computer Programming</p></Link>   
+                        {/* <Link target="_blank" href="https://cs.nyu.edu/courses/spring23/CSCI-UA.0002-005/"><p className="mt-12 text-lg font-semibold squiggle hover:text-[var(--c2)]">CSCI-UA.0002 Introduction to Computer Programming</p></Link>    */}
+                        <h4><p className="mt-12 text-lg font-semibold">CSCI-UA.0002 Introduction to Computer Programming</p></h4>   
+
                         <p className='mt-6 text-lg leading-8 text-gray-600' >(4 credits) This course is designed to be an introduction to the fundamentals of computer programming, which is the foundation of Computer Science. Students will design, write and debug computer programs using Python. No knowledge of programming is assumed.</p>
                  
-                        <Link target="_blank" href="https://cs.nyu.edu/courses/spring23/CSCI-UA.0004-005/"><p className="mt-12 text-lg font-semibold squiggle hover:text-[var(--c2)]">CSCI-UA.0004 Introduction to Web Design and Computer Principles</p></Link>   
+                        {/* <Link target="_blank" href="https://cs.nyu.edu/courses/spring23/CSCI-UA.0004-005/"><p className="mt-12 text-lg font-semibold squiggle hover:text-[var(--c2)]">CSCI-UA.0004 Introduction to Web Design and Computer Principles</p></Link>    */}
+                        <h4><p className="mt-12 text-lg font-semibold">CSCI-UA.0004 Introduction to Web Design and Computer Principles</p></h4>   
                         <p className='mt-6 text-lg  text-gray-600 leading-8'>(4 credits) This course introduces students to both the practice of web design and the basic principles of computer science. The practice component of the course covers not only web design but also current graphics and software tools. The principles section includes an overview of hardware and software, the history of computers, and a discussion of the impact of computers and the internet. No knowledge of programming is assumed.</p>
                  
-                        <Link target="_blank" href="https://itp.nyu.edu/ima/courses/code/"><p className="mt-12 text-lg font-semibold squiggle hover:text-[var(--c2)]">IMNY-UT.0001 Code!</p></Link>   
+                        {/* <Link target="_blank" href="https://itp.nyu.edu/ima/courses/code/"><p className="mt-12 text-lg font-semibold squiggle hover:text-[var(--c2)]">IMNY-UT.0001 Code!</p></Link>    */}
+                        <h4><p className="mt-12 text-lg font-semibold">IMNY-UT.0001 Code!</p></h4>   
                         <p className='mt-6 text-lg leading-8 text-gray-600'>(2 credits) This online 7 week course focuses on the fundamentals of computer programming (variables, conditionals, iteration, functions & objects) using JavaScript. In particular it leverages the p5.js creative computing environment which is oriented towards visual displays on desktops, laptops, tablets or smartphones. The course is designed for computer programming novices.</p>
                         <p className='mt-8 text-lg leading-8 text-gray-600'>What can computation add to human communication? You will gain a deeper understanding of the possibilities of computation–– possibilities that will augment and enhance the perspectives, abilities and knowledge you bring from your field of study (e.g. art, design, humanities, sciences, engineering). At first it may feel foreign, as foreign as learning a new language or way of thinking. But soon, once you get some basic skills under your belt, you’ll be able to make projects that reflect your own interests and passions.</p>                    
                  
-                        <Link target="_blank" href="https://itp.nyu.edu/ima/courses/code-2/"><p className="mt-12 text-lg font-semibold squiggle hover:text-[var(--c2)]">IMNY-UT.0002 Code! 2</p></Link>   
+                        {/* <Link target="_blank" href="https://itp.nyu.edu/ima/courses/code-2/"><p className="mt-12 text-lg font-semibold squiggle hover:text-[var(--c2)]">IMNY-UT.0002 Code! 2</p></Link>    */}
+                        <h4><p className="mt-12 text-lg font-semibold">IMNY-UT.0002 Code! 2</p></h4>   
                         <p className='mt-6 text-lg leading-8 text-gray-600'>(2 credits) This online 7 week course focuses on applying fundamentals of computer programming in JavaScript to interactive media projects. In particular, it leverages the p5.js creative computing environment which is oriented towards visual displays on desktops, laptops, tablets or smartphones. The course is designed for students with a foundation level understanding of programming in JavaScript with the p5.js library. The Code! course (or equivalent) is a prerequisite.</p>
                  
                         
