@@ -5,7 +5,6 @@ import Head from 'next/head';
 import Layout from '../components/layout';
 import Container from '../components/container';
 import MediaObject from '../components/mediaObject';
-import Script from 'next/script';
 
 //latest projects
 const projects = [
@@ -59,17 +58,6 @@ export default function ProjectsPage() {
     return(
         <Layout>
             <Head>
-                <Script src="https://www.googletagmanager.com/gtag/js?id=G-NPDX9RG0NH"></Script>
-                <Script id="google-analytics">
-                    {`
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-
-                    gtag('config', 'G-NPDX9RG0NH');`
-                    }
-                </Script>
-
                 <title>Projects | Julie Lizardo</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 <link rel="icon" type="image/x-png" href="/images/favicon.png"></link>

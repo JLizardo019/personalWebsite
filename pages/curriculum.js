@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import { useEffect } from 'react';
-import Script from 'next/script';
 
 import 'animate.css';
 
@@ -32,16 +31,6 @@ export default function CurriculumPage() {
     return(
         <>
             <Head>
-                <Script src="https://www.googletagmanager.com/gtag/js?id=G-NPDX9RG0NH"></Script>
-                <Script id="google-analytics">
-                    {`
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-
-                    gtag('config', 'G-NPDX9RG0NH');`
-                    }
-                </Script>
                     <title>Curriculum | Julie Lizardo</title>
                     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                     <link rel="icon" type="image/x-png" href="/images/favicon.png"></link>

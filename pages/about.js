@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Layout from '../components/layout';
 import Container from '../components/container';
 import { useEffect } from 'react';
-import Script from 'next/script';
 
 import 'animate.css';
 
@@ -30,16 +29,6 @@ export default function AboutPage() {
     return(
         <Layout>
             <Head>
-                <Script src="https://www.googletagmanager.com/gtag/js?id=G-NPDX9RG0NH"></Script>
-                <Script id="google-analytics">
-                    {`
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-
-                    gtag('config', 'G-NPDX9RG0NH');`
-                    }
-                </Script>
                 <title>About | Julie Lizardo</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 <link rel="icon" type="image/x-png" href="/images/favicon.png"></link>

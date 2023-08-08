@@ -10,7 +10,6 @@ import 'animate.css';
 import Layout from '../components/layout';
 import MainHero from '../components/mainHero';
 import Container from '../components/container';
-import Script from 'next/script';
 import Badge2 from '../components/badge2';
 
 let tools = [{name:'HTML', id:"1"}, {name:'CSS', id:"2"}, {name:'SASS', id:"3"}, {name:'Javascript', id:"4"}, {name:'Python', id:"5"}, {name:'Java', id:"6"}, {name:'PHP', id:"7"}, {name:'React.js', id:"8"}, {name:'p5.js', id:"9"}, {name:'MongoDB', id:"10"}, {name:'Firebase', id:"11"}, {name:'SQL', id:"12"}, {name:'Tailwind CSS', id:"13"}, {name:'Next.js', id:"14"}, {name:'Node.js', id:"15"}, {name:'Bootstrap', id:"16"}, {name:'Git', id:"17"}, {name:'Figma', id:"18"}, {name:'Adobe Suite', id:"19"}, {name:'Vercel', id:"20"}, {name:'Heroku', id:"21"}]; 
@@ -56,17 +55,6 @@ export default function HomePage() {
     return(
         <>
             <Head>
-                <Script src="https://www.googletagmanager.com/gtag/js?id=G-NPDX9RG0NH"></Script>
-                <Script id="google-analytics">
-                    {`
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-
-                    gtag('config', 'G-NPDX9RG0NH');`
-                    }
-                </Script>
-
                 <title>Julie Lizardo | Web Developer</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 <link rel="icon" type="image/x-png" href="/images/favicon.png"></link>
