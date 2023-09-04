@@ -7,7 +7,7 @@ export default function MediaObject({ title, alt, tools, url, image, code, descr
   
   return (<div className="lg:flex my-6 py-4 blob-t">
         <div className="mb-4 lg:w-2/4 sm:mr-4">
-          <Image className="proj-image border-[var(--c1)] border-4 h-auto w-full" alt ={alt} src={image} width={2880} height={1548} priority="true" ></Image>
+          <Image className="proj-image border-[var(--c1)] border-4 h-auto w-full" alt ={alt} src={image} width={2880} height={1548} priority="true"></Image>
         </div>
         <div className="lg:w-2/4">
           

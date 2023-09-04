@@ -29,6 +29,16 @@ const projects = [
         alt: "Personal Website Screenshot"
     },
     {
+        id:12,
+        title:"Tic-Tac-Toe Game",
+        tools:[{name:'Web Sockets', id:"5"}, {name:'Node.js', id:"1"}, {name:'Javascript', id:"4"},{name:'HTML', id:"2"}, {name:'CSS', id:"3"}], 
+        descript:"A multiplayer game server that allows users to play tic-tac-toe with anyone online anonymously. It is built to support over 3 million simultaneous online game rooms. The personal goal of the project is to explore web sockets and backend development with APIs.",
+        image:"/images/ttt.png",
+        url:"https://xoxo-game.glitch.me/",
+        code:"https://github.com/JLizardo019/tic-tac-toe-game",
+        alt: "Tic-Tac-Toe Game"
+    },
+    {
         id:11,
         title:"Dancing Pumpkin",
         tools:[{name:'Machine Learning', id:"5"}, {name:'p5.js', id:"1"}, {name:'ml5.js', id:"4"},{name:'HTML', id:"2"}, {name:'CSS', id:"3"}], 
