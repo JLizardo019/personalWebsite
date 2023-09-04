@@ -12,7 +12,7 @@ import MainHero from '../components/mainHero';
 import Container from '../components/container';
 import Badge2 from '../components/badge2';
 
-let tools = [{name:'HTML', id:"1"}, {name:'CSS', id:"2"}, {name:'SASS', id:"3"}, {name:'Javascript', id:"4"}, {name:'Python', id:"5"}, {name:'Java', id:"6"}, {name:'PHP', id:"7"}, {name:'React.js', id:"8"}, {name:'p5.js', id:"9"}, {name:'MongoDB', id:"10"}, {name:'Firebase', id:"11"}, {name:'SQL', id:"12"}, {name:'Tailwind CSS', id:"13"}, {name:'Next.js', id:"14"}, {name:'Node.js', id:"15"}, {name:'Bootstrap', id:"16"}, {name:'Git', id:"17"}, {name:'Figma', id:"18"}, {name:'Adobe Suite', id:"19"}, {name:'Vercel', id:"20"}, {name:'Heroku', id:"21"}, {name:'Google Analytics', id:"22"}, {name:'Formspree', id:"23"}]; 
+let tools = [{name:'HTML', id:"1"}, {name:'CSS', id:"2"}, {name:'SASS', id:"3"}, {name:'Javascript', id:"4"}, {name:'Python', id:"5"}, {name:'Java', id:"6"}, {name:'PHP', id:"7"}, {name:'React.js', id:"8"}, {name:'p5.js', id:"9"}, {name:'MongoDB', id:"10"}, {name:'Firebase', id:"11"}, {name:'SQL', id:"12"}, {name:'Tailwind CSS', id:"13"}, {name:'Next.js', id:"14"}, {name:'Node.js', id:"15"}, {name:'Bootstrap', id:"16"}, {name:'Git', id:"17"}, {name:'RESTful APIs', id:"24"}, {name:'Agile Development', id:"25"}, {name:'Figma', id:"18"}, {name:'Adobe Suite', id:"19"}, {name:'Vercel', id:"20"}, {name:'Heroku', id:"21"}, {name:'Google Analytics', id:"22"}, {name:'Formspree', id:"23"}]; 
 
 export default function HomePage() {
 
