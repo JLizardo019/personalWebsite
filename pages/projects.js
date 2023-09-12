@@ -22,10 +22,10 @@ const projects = [
         id:2,
         title:"julielizardo.com",
         tools:[{name:'Next.js', id:"1"}, {name:'React.js', id:"2"}, {name:'Tailwind CSS', id:"3"}, {name:'Figma', id:"4"}, {name:'Adobe Suite', id:"5"}, {name:'Vercel', id:"6"}, {name:'Google Analytics', id:"7"}], 
-        descript:"Tired of my previous website design, I built version 2.0! I wanted to include more playfulness to the front-end and have the asthetic reflect my personality more."
+        descript:"Tired of my previous website design, I built version 2.0! I wanted to include more playfulness to the front-end and have the aesthetic reflect my personality more."
         , image:"/images/screenshot.png",
         url:"/",
-        code:"",
+        code:"https://github.com/JLizardo019/personalWebsite",
         alt: "Personal Website Screenshot"
     },
     {
