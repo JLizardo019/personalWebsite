@@ -9,6 +9,16 @@ import MediaObject from '../components/mediaObject';
 //latest projects
 const projects = [
     {
+        id:2,
+        title:"julielizardo.com",
+        tools:[{name:'Next.js', id:"1"}, {name:'React.js', id:"2"}, {name:'Tailwind CSS', id:"3"}, {name:'Figma', id:"4"}, {name:'Adobe Suite', id:"5"}, {name:'Vercel', id:"6"}, {name:'Google Analytics', id:"7"}], 
+        descript:"Tired of my previous website design, I built version 2.0! I wanted to include more playfulness to the front-end and have the aesthetic reflect my personality more."
+        , image:"/images/screenshot.png",
+        url:"/",
+        code:"https://github.com/JLizardo019/personalWebsite",
+        alt: "Personal Website Screenshot"
+    },
+    {
         id: 1,
         title:"Cog-Sci-DIY - NYU CREATE LAB",
         tools:[{name:'Node.js', id:"1"}, {name:'SQL', id:"2"}, {name:'React.js', id:"3"}, {name:'SASS', id:"4"}, {name:'Firebase', id:"5"}, {name:'Figma', id:"6"}], 
@@ -19,14 +29,14 @@ const projects = [
         alt: "Cog-Sci-DIY Screenshot"
     },
     {
-        id:2,
-        title:"julielizardo.com",
-        tools:[{name:'Next.js', id:"1"}, {name:'React.js', id:"2"}, {name:'Tailwind CSS', id:"3"}, {name:'Figma', id:"4"}, {name:'Adobe Suite', id:"5"}, {name:'Vercel', id:"6"}, {name:'Google Analytics', id:"7"}], 
-        descript:"Tired of my previous website design, I built version 2.0! I wanted to include more playfulness to the front-end and have the aesthetic reflect my personality more."
-        , image:"/images/screenshot.png",
-        url:"/",
-        code:"https://github.com/JLizardo019/personalWebsite",
-        alt: "Personal Website Screenshot"
+        id: 1,
+        title:"Where's the Trash?",
+        tools:[{name:'Node.js', id:"1"}, {name:'MongoDB', id:"2"}, {name:'React.js', id:"3"}, {name:'Postman', id:"4"}, {name:'Leaflet.js', id:"5"}, {name:'NYC Open Data', id:"6"}], 
+        descript:"An interactive map that visualizes the New York Department of Sanitation's [DSNY] public trash bins across all 5 boroughs. Frustated by the amount of litter on NYC streets, I wanted to create a tool to help me locate the nearest trash bin."
+        , image:"/images/website.png",
+        url:"https://wheres-the-trash.glitch.me/",
+        code:"https://github.com/JLizardo019/wheresthetrash",
+        alt: "Where's the Trash Screenshot"
     },
     {
         id:12,
