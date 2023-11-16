@@ -6,8 +6,7 @@ import { useEffect } from 'react';
 
 import 'animate.css';
 
-let interests=[{name:'Hiking',  source:"/images/hiking.HEIC", id:"1"}, {name:'Fishing',source:"/images/fishing.JPG", id:"2"}, {name:'Doing Aerial Yoga', source:"/images/yoga.JPG", id:"3"}, {name:'Playing Zelda:TotK', source:"/images/zelda.jpeg", id:"4"}]; 
-
+let interests=[{name:'Hiking',  source:"/images/hiking.HEIC", id:"1"}, {name:'Fishing',source:"/images/fishing.JPG", id:"2"}, {name:'Performing Aerial Yoga', source:"/images/yoga.JPG", id:"3"}, {name:'Playing Zelda:TotK', source:"/images/zelda.jpeg", id:"4"}]; 
 
 export default function AboutPage() {
     useEffect(() => {
@@ -35,17 +34,17 @@ export default function AboutPage() {
 
             </Head>
             <Container>
-                <h2 id="title" className="mt-2 text-center text-4xl font-bold  text-gray-900">About</h2>
+                <h2 id="title" className="mt-2 text-center text-4xl font-bold text-gray-900">About</h2>
                 <div className='mt-6 lg:flex lg:justify-between'>
                     <div id="photo" className='justify-center flex p-3 lg:w-2/4'>
                         <Image className='border-[var(--c1)] border-4 sm:max-w-[20rem] lg:max-w-[25rem] lg:max-h-[25rem] rounded-full' width={1280} height={1280} src="/images/headshot.png" alt="Image of Julie" priority={true}/>
                     </div>
                     <div id="text" className='lg:order-first my-3 p-3 lg:w-2/4'>
-                        <p className='mb-8 text-lg leading-8 text-gray-600'>Hello, Thanks for stopping by! I am a proud Dominican and first generation immigrant. I received a Bachelor of Arts from NYU College of Arts and Science in biology with a focus in ecology, and a Master of Professional Studies at NYU Interactive Telecommunications Program in computer science and art. My research encompasses creating various web tools that range from generative art to dynamic maps of NYC’s trash system. One of my life-long goals is to promote computer science education and tackle the environmental racism faced in misrepresented communities.</p>
+                        <p className='mb-8 text-lg leading-8 text-gray-600'>Hi, I am Julie! I am a proud Dominican, and born & raised New Yorker. I have recieved 2 degrees: 1&#41; Bachelor of Arts from NYU College of Arts and Science in Biology and a minor in Computer Science and Math 2&#41; Master of Professional Studies at NYU Interactive Telecommunications Program in Computer Science and Art. I currently work at NYU as an Adjunct Professor in the Department of Computer Science and as a Multifunctional Specialist at the ed-tech start-up Teachers Lead Tech. My passion encompasses creating robust digital solutions and  empowering misrepresented communities to pursue computer science education.</p>
                         
-                        <p className='mb-8 text-lg leading-8 text-gray-600'>Growing up, I was never exposed to computer science and it never appeared as a possible career choice that was accessible to me. I was intimidated by the complexity of the field and how it seemed catered to men. It was not until college that I had the opportunity to enroll in a computer science course as an elective. Therefore, it has become my personal mission to encourage students from misrepresented communities to pursue computer science and STEM fields.</p>
+                        <p className='mb-8 text-lg leading-8 text-gray-600'>Growing up, I was never exposed to computer science and it never appeared as a possible career choice that was accessible to me. I was intimidated by the complexity of the field and how the field was predominantly male. It was not until college that I had the opportunity to enroll in a computer science course as an elective. Since then, it has become my personal mission to expand my programming skills as much as possible and help others to start their computer science journey.</p>
                         
-                        <p className='text-lg leading-8 text-gray-600'>Today, I am a Visiting Clinical Assistant Professor at NYU’s Department of Computer Science and a freelance web developer.</p>
+                        <p className='text-lg leading-8 text-gray-600'>Today, I am a seeking full-time opportunties in the web developement and software engineering space to bridge my knowlege between theory and practice.</p>
                     </div>
                 </div>
                 <div className='mt-8'>
@@ -54,7 +53,7 @@ export default function AboutPage() {
                         {interests.map((item) => (
                             <li key={item.key} className="relative">
                             <div className="group aspect-h-7 aspect-w-10 block w-full overflow-hidden rounded-lg bg-gray-100">
-                                <img src={item.source} alt="hobbies" className="pointer-events-none object-cover group-hover:opacity-75" />
+                                <img src={item.source} alt="hobbies" className="pointer-events-none object-cover" />
                                 
                             </div>
                             <p className="pointer-events-none mt-2 block truncate text-lg font-medium text-gray-900">{item.name}</p>

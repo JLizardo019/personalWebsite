@@ -12,7 +12,7 @@ const projects = [
         id:2,
         title:"julielizardo.com",
         tools:[{name:'Next.js', id:"1"}, {name:'React.js', id:"2"}, {name:'Tailwind CSS', id:"3"}, {name:'Figma', id:"4"}, {name:'Adobe Suite', id:"5"}, {name:'Vercel', id:"6"}, {name:'Google Analytics', id:"7"}], 
-        descript:"Tired of my previous website design, I built version 2.0! I wanted to include more playfulness to the front-end and have the aesthetic reflect my personality more."
+        descript:"My portfolio site serves as a project as well as I am using it to showcase my skills in Next.js and Tailwind CSS. My goal is to create a simple and clean design that is easy to navigate. I am also using this site to learn about SEO and Google Analytics in more depth."
         , image:"/images/screenshot.png",
         url:"/",
         code:"https://github.com/JLizardo019/personalWebsite",
@@ -22,7 +22,7 @@ const projects = [
         id: 1,
         title:"Cog-Sci-DIY - NYU CREATE LAB",
         tools:[{name:'Node.js', id:"1"}, {name:'SQL', id:"2"}, {name:'React.js', id:"3"}, {name:'SASS', id:"4"}, {name:'Firebase', id:"5"}, {name:'Figma', id:"6"}], 
-        descript:"A web application used to conduct research in fields of linguistics and cognitive psychology with high school students and freshman college students. It features a content management system that includes web forms to create web pages, upload content, add surveys, hyperlinks and forum discussion boards."
+        descript:"A web application used to conduct research in fields of linguistics and cognitive psychology with high school students and freshman college students. It features a content management system that includes web forms to create web pages, upload content, add surveys, hyperlinks and forum discussion boards. I led a team of 3 front-end engineers to build this application during my internship at NYU CREATE Lab."
         , image:"/images/OSU.png",
         url:"https://create.nyu.edu/cogscidiy/",
         code:"",
@@ -32,7 +32,7 @@ const projects = [
         id: 1,
         title:"Where's the Trash?",
         tools:[{name:'Node.js', id:"1"}, {name:'MongoDB', id:"2"}, {name:'React.js', id:"3"}, {name:'Postman', id:"4"}, {name:'Leaflet.js', id:"5"}, {name:'NYC Open Data', id:"6"}], 
-        descript:"An interactive map that visualizes the New York Department of Sanitation's [DSNY] public trash bins across all 5 boroughs. Frustated by the amount of litter on NYC streets, I wanted to create a tool to help me locate the nearest trash bin."
+        descript:"An interactive map that visualizes the New York Department of Sanitation's [DSNY] public trash bins across all 5 boroughs using NYC Open Data. Users can filter the trash bins by borough and can locate the nearest trash bin to their current location. As a born and raised New Yorker raised in a low-income neighborhood, I wanted to create a tool that would help New Yorkers from littering and bring awareness to the lack of public trash bins across neighborhoods."
         , image:"/images/website.png",
         url:"https://wheres-the-trash.glitch.me/",
         code:"https://github.com/JLizardo019/wheresthetrash",
@@ -42,7 +42,7 @@ const projects = [
         id:12,
         title:"Tic-Tac-Toe Game",
         tools:[{name:'Web Sockets', id:"5"}, {name:'Node.js', id:"1"}, {name:'Javascript', id:"4"},{name:'HTML', id:"2"}, {name:'CSS', id:"3"}], 
-        descript:"A multiplayer game server that allows users to play tic-tac-toe with anyone online anonymously. It is built to support over 3 million simultaneous online game rooms. The personal goal of the project is to explore web sockets and backend development with APIs.",
+        descript:"A multiplayer game server that allows users to play tic-tac-toe with anyone online anonymously. It is built to support over 3 million simultaneous online game rooms. The personal goal of this project is to explore web sockets and backend development with APIs. I used a JSON file as the simpliest database to store the game rooms and their states.",
         image:"/images/ttt.png",
         url:"https://xoxo-game.glitch.me/",
         code:"https://github.com/JLizardo019/tic-tac-toe-game",
@@ -52,7 +52,7 @@ const projects = [
         id:11,
         title:"Dancing Pumpkin",
         tools:[{name:'Machine Learning', id:"5"}, {name:'p5.js', id:"1"}, {name:'ml5.js', id:"4"},{name:'HTML', id:"2"}, {name:'CSS', id:"3"}], 
-        descript:"A web app that allows users to become their own dancing pumpkin character by using ml5.js Posenet model to detect your body from your webcam and move the character on the canvas. The character scales according to the distance between the user and the camera by measuring the distance between the user's eyes. I reduced the noise introduced by the webcam by linear interpolation of the key points. Therefore, there is a slight lag in the responsiveness in order to make the movements look more smooth."
+        descript:"A web app that allows users to become their own dancing pumpkin character by using ml5.js Posenet model to detect your body from your webcam and move the character on the canvas. The character scales according to the distance between the user and the camera by measuring the distance between the user's eyes. To reduce background noise introduced by the webcam, I performed a linear interpolation of the key points. Try it out and have some spooky fun!"
         , image:"/images/pumpkin.png",
         url:"https://dancing-pumpkin-character.glitch.me/ ",
         code:"https://github.com/JLizardo019/Dancing-Pumpkin-Character",
@@ -62,7 +62,7 @@ const projects = [
         id:10,
         title:"Generative Art",
         tools:[{name:'p5.js', id:"1"}, {name:'HTML', id:"2"}, {name:'CSS', id:"3"}], 
-        descript:"Generative Art is a website and tool that allows users to generate art out of text. Each image that is produced is unique and irreproducible. To begin, users enter sentences or words on the text box on the right. As users type new letters, new shapes are drawn on the canvas. When the user is done typing, they have the option to clear the canvas or save the resulting image by clicking the appropriate buttons. There is also the option to customize the colors of the background and the shapes that are drawn. The default background color is black and the default shape is white."
+        descript:"A website and tool that allows users to generate art out of text. Each image that is produced is unique and irreproducible. As users type words and sentences, new shapes are drawn on the canvas. Users can choose to customize the colors of the shapes and save their artwork as an image."
         , image:"/images/ga.png",
         url:"https://jlizardo019.github.io/Generative-Art/",
         code:"https://github.com/JLizardo019/Generative-Art/",
@@ -72,7 +72,7 @@ const projects = [
         id:4,
         title:"Pendulum Hair",
         tools:[{name:'p5.js', id:"1"}, {name:'HTML', id:"2"}, {name:'CSS', id:"3"}], 
-        descript:"In this sketch, I created a happy, girl character with flowing hair. When you click and drag your mouse over the head from side to side, you can control the tilt of the character’s head. Each strand of hair acts as a pendulum swinging back and forth until it is at rest. I created multiple strands of hair by building a Hair class and instantiating multiple objects. To add a whimsical touch, I made the facial expression change while you are tilting the character’s head."
+        descript:"A playful digital sketch of a happy character with flowing hair. When you click and drag your mouse over the head from side to side, you can control the tilt of the character’s head. Each strand of hair acts as a pendulum swinging back and forth until it is at rest. I created multiple strands of hair by building a Hair class and instantiating multiple objects. To add a whimsical touch, I made the facial expression change while you are tilting the character’s head."
         , image:"/images/pendulum-hair.png",
         url:"https://editor.p5js.org/JLizardo019/full/wQ0obumMg",
         code:"https://editor.p5js.org/JLizardo019/sketches/wQ0obumMg",
@@ -82,7 +82,7 @@ const projects = [
         id:3,
         title:"Custom Pixel Mirror",
         tools:[{name:'p5.js', id:"1"}, {name:'HTML', id:"2"}, {name:'CSS', id:"3"}], 
-        descript:"I made a 4-tone mirror that uses your webcam and varying text symbols as pixels! For best results, make sure you have bright lighting and a light background."
+        descript:"A 4-tone mirror that uses your webcam and varying text symbols as pixels! I calculate the brightness of each original pixel and draw a ASCII character in its place. For best results, make sure you have bright lighting and a light background."
         , image:"/images/pixel_mirror.png",
         url:"https://editor.p5js.org/JLizardo019/full/H3ANvPjVs",
         code:"https://editor.p5js.org/JLizardo019/sketches/H3ANvPjVs",
@@ -129,10 +129,10 @@ const projects = [
         alt: "Foilage"
     },
     {
-        id:8,
+        id:9,
         title:"Life in Color: Spotlight",
         tools:[{name:'p5.js', id:"1"}, {name:'HTML', id:"2"}, {name:'CSS', id:"3"}], 
-        descript:"Life in Color is a composition of 6 projects where I use the same color palette. Spotlight is a program that encourages the user to explore the canvas. It starts out with a spotlight and a message that reads “Look Around!” The spotlight moves along your cursor as you navigate the canvas. Once you find a word, it appears on the screen. Once all the words are located, the program reads “Discover Yourself. Don’t be afraid to explore!”"
+        descript:"Life in Color is a composition of 6 projects where I use the same color palette. Spotlight is a program that encourages the user to explore the canvas. It starts out with a spotlight and a message that reads “Look Around!” The spotlight moves along your cursor as you navigate the canvas. Once you hover over word, it appears on the screen. The program reads “Discover Yourself. Don’t be afraid to explore!” once all the words have been found."
         , image:"/images/spotlight.png",
         url:"https://editor.p5js.org/JLizardo019/full/SMOl2ObdP",
         code:"https://editor.p5js.org/JLizardo019/sketches/SMOl2ObdP",

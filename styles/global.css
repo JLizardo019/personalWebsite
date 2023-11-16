@@ -3,11 +3,14 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-    --c1:#fef8b4;
+:root{ 
+    /* previous #dfe1e5, #227ac7 */
+    --c1: #dfe1e5;
     --c2: #FF7094;
     
-    --c3: rgba(255, 252, 252, 0.684);
+    --c3: rgba(170, 169, 169, 0.684);
+    --c4: rgba(0, 0, 0, 0.761);
+    --font: 'Helvetica Neue', sans-serif;
 }
   
 @keyframes animateName {
@@ -58,22 +61,9 @@ svg#animation{
 } 
 
 
-.squiggle 
-{
-    display: inline-block;
-    text-decoration: underline wavy;
-    text-underline-offset: 6px;
-    -webkit-text-decoration: underline wavy;
-    text-decoration-color: var(--c2);  
-}
 
-.squiggle:hover{
- color:var(--c2);
- text-decoration: none;
-}
-
-h1, h2 {
-    font-family: 'Patrick Hand SC', cursive;
+h1, h2, body {
+    font-family: var(--font);
 }
 
 .shadow2{
@@ -103,6 +93,9 @@ h1, h2 {
 @media (min-width: 640px) {
     html{
         font-size: 14px;
+    }
+    #character img{
+        margin:auto;
     }
 }
 
